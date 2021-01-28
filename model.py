@@ -2,6 +2,8 @@ import numpy as np
 import scipy
 import scipy.ndimage
 
+# RGB color global definition
+
 COLOR_BLACK = 0, 0, 0
 COLOR_WHITE = 255, 255, 255
 COLOR_LIGHTBLUE = 49, 188, 174
@@ -21,7 +23,8 @@ class Model(object):
         self.historyPos = np.zeros((self.width, self.lenght))
         self.historyColor = np.zeros((self.width, self.lenght, 3))
 
-
+    # functions to set and get size
+    
     def setSize(self, width, lenght):
 
         self.width = width
@@ -42,19 +45,23 @@ class Model(object):
         self.pos = pos
         self.historyPos = history
 
-
+    # function to calculate next state; historypos is a counter that keep track of population
+    # lifetime
 
     def getNextState(self):
 
         self.nextState()
         return self.pos, self.historyColor
 
+    
     def nextState(self):
 
         neighbours = self.findNeighbours()
         for i in range(self.width):
             for j in range(self.lenght):
                 if neighbours[i, j] % 2 == 0:
+                    # case of unpopulated location that becomes populated because it has 
+                    # exactly three populated neighbors
                     if neighbours[i, j] / 2 == 3:
                         self.pos[i, j, 0:3] = COLOR_WHITE
                         self.historyPos[i, j] += 1
@@ -62,6 +69,7 @@ class Model(object):
                         self.pos[i, j, 0:3] = COLOR_BLACK
                         self.historyPos[i, j] = 0
                 elif (neighbours[i, j] - 1) / 2 == 2 or (neighbours[i, j] - 1) / 2 == 3:
+                    # case of populated location with 2 or 3 neighbors
                     self.pos[i, j, 0:3] = COLOR_WHITE
                     self.historyPos[i, j] += 1
                 else:
@@ -71,6 +79,8 @@ class Model(object):
         self.computeHistoryMap()
         return
 
+    # function to set to 1 every location populated (needed later for convolution)
+    
     def valueConversion(self, pos, conversion):
 
         valueConverted = np.zeros((self.width, self.lenght))
@@ -81,16 +91,19 @@ class Model(object):
         return valueConverted
 
 
-
+    # function that uses convolution to track the number of neighbours
+    
     def findNeighbours(self):
 
         kernel = np.array([[2, 2, 2], [2, 1, 2], [2, 2, 2]])
         pos = self.valueConversion(self.pos, True)
         neighbours = scipy.ndimage.filters.convolve(pos, kernel, mode='constant', cval=0)
 
-
         return neighbours
 
+    # function that uses historypos values to draw the historymap
+    # lightblue(newborn) -> yellow -> orange -> red(ancient)
+    
     def computeHistoryMap(self):
 
         for i in range(self.width):
