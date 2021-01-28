@@ -5,6 +5,8 @@ from PyQt5.QtCore import QSize, QTimer, Qt, QRect
 from PyQt5.QtGui import QPixmap
 from PyQt5.QtWidgets import QLabel, QWidget
 
+# RGB color global definition
+
 COLOR_BLACK = 0, 0, 0
 COLOR_WHITE = 255, 255, 255
 
@@ -36,9 +38,7 @@ class Controller(QWidget):
         self.label.setGeometry(QRect(10, 10, self.lenghtPx, self.widthPx))
         self.label.setFixedSize(self.lenghtPx, self.widthPx)
         self.label.show()
-
-
-
+        
         self.xStart = 0#int((self.lenght / 2) - (100 / 2))
         self.xEnd = 200#self.xZoom + self.xStart
 
@@ -139,7 +139,9 @@ class Controller(QWidget):
         self.label.setPixmap(self.pixMap)
         self.label.show()
 
-
+    # function triggered by the view's clearbutton that reset the pos and the historymap
+    # to 0 and then display
+    
     def clear(self):
 
         self.simulation_started = False
@@ -164,6 +166,8 @@ class Controller(QWidget):
         return QSize(self.widthPx, self.lenghtPx)
 
 
+    # function triggered by the view's checkbox that set the bool
+    
     def setHistoryMode(self, bool):
 
         self.historyMode = bool
