@@ -12,10 +12,11 @@ This project focuses on **functionality**, **code hygene**, **correctness**, **c
 Include logo/demo screenshot etc.
 
 ## Tech/framework used
-Ex. -
+Python 3.5+ language
 
 <b>Built with</b>
-- [Electron](https://electron.atom.io)
+- [PyQT5](https://www.riverbankcomputing.com/software/pyqt/)
+- [QTDesigner](https://build-system.fman.io/qt-designer-download)
 
 ## Features implemented
 What makes your project stand out?
