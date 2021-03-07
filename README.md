@@ -44,5 +44,6 @@ Describe and show how to run the tests with code examples.
 If people like your project they’ll want to learn how they can use it. To do so include step by step guide to use your project.
 
 ## Credits
-Give proper credits. This could be a link to any repo which inspired you to build this project, any blogposts or links to people who contrbuted in this project. 
+Credits to GTRONIK for the Aqua Style Sheet for QT Applications. 
+https://github.com/GTRONICK/QSS
 
