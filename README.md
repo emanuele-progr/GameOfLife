@@ -23,7 +23,7 @@ Python 3.5+ language
 * Start/pause/clear controls
 * Variable framerate
 * Drawing/editing of state
-# Extra features
+### Extra features
 * Zoom slider
 * Cell history
 
