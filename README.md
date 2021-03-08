@@ -9,8 +9,8 @@ complete and polished Graphical User Interface to control the simulation with va
 This project focuses on **functionality**, **code hygene**, **correctness**, **completeness** and **extra features** using interface programming **best practices** (such as MVC) so the application's overall look it's not a central aspect.
 
 ## Screenshots
-![Screenshot from 2021-03-08 20-31-30](https://user-images.githubusercontent.com/22282000/110372615-cec8c280-804e-11eb-9112-1126e8aa28e3.png)
-![Screenshot from 2021-03-08 20-32-07](https://user-images.githubusercontent.com/22282000/110372771-fd469d80-804e-11eb-8b9d-460025ae43ab.png)
+![Screenshot from 2021-03-08 20-31-30](https://user-images.githubusercontent.com/22282000/110372918-2e26d280-804f-11eb-8a93-22b47eeded4e.png)
+![Screenshot from 2021-03-08 20-32-07](https://user-images.githubusercontent.com/22282000/110372927-2ff09600-804f-11eb-974f-a0636db863da.png)
 
 
 ## Tech/framework used
