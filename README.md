@@ -10,6 +10,8 @@ This project focuses on **functionality**, **code hygene**, **correctness**, **c
 
 ## Screenshots
 ![Screenshot from 2021-03-08 20-31-30](https://user-images.githubusercontent.com/22282000/110372615-cec8c280-804e-11eb-9112-1126e8aa28e3.png)
+![Screenshot from 2021-03-08 20-32-07](https://user-images.githubusercontent.com/22282000/110372771-fd469d80-804e-11eb-8b9d-460025ae43ab.png)
+
 
 ## Tech/framework used
 Python 3.5+ language
