@@ -29,21 +29,16 @@ Python 3.5+ language
 * Zoom slider
 * Cell history
 
-## Code Example
-Show what the library does as concisely as possible, developers should be able to figure out **how** your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.
-
 ## Installation
 Simply install the necessary libraries and run _main.py_
 
-## API Reference
-
-Depending on the size of the project, if it is small and simple enough the reference docs can be added to the README. For medium size to larger projects it is important to at least provide a link to where the API reference docs live.
-
-## Tests
-Describe and show how to run the tests with code examples.
 
 ## How to use?
-If people like your project they’ll want to learn how they can use it. To do so include step by step guide to use your project.
+Left click on the blank board to add a population to a cell (black cell).\
+Right click to bring back the cell to white.\
+Left click and mouse movement to define a continuous sequence of black cells.\
+Play button to start the simulation then is possible to pause.\
+Clear button to revert the board to a blank state.\
 
 ## Credits
 Credits to GTRONIK for the Aqua Style Sheet for QT Applications. 
