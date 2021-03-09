@@ -38,7 +38,7 @@ Left click on the blank board to add a population to a cell (black cell).\
 Right click to bring back the cell to white.\
 Left click and mouse movement to define a continuous sequence of black cells.\
 Play button to start the simulation then is possible to pause.\
-Clear button to revert the board to a blank state.\
+Clear button to revert the board to a blank state.
 
 ## Credits
 Credits to GTRONIK for the Aqua Style Sheet for QT Applications. 
