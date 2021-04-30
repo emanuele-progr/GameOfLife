@@ -16,9 +16,12 @@ This project focuses on **functionality**, **code hygene**, **correctness**, **c
 ## Tech/framework used
 Python 3.5+ language
 
-<b>Built with</b>
-- [PyQT5](https://www.riverbankcomputing.com/software/pyqt/)
-- [QTDesigner](https://build-system.fman.io/qt-designer-download)
+<b>Built and tested with</b>
+- [PyQT5](https://www.riverbankcomputing.com/software/pyqt/) v. 5.15.2
+- [QTDesigner](https://build-system.fman.io/qt-designer-download) v. 5.5.1
+- scipy v. 1.4.1
+- numpy v. 1.18.5
+- qimage2ndarray v. 1.8.3
 
 ## Features implemented
 * A working visual simulation
